@@ -1,0 +1,31 @@
+/* Existing gradient animation */
+@keyframes gradientMove {
+  0% { background-position: 0% 0%; }
+  50% { background-position: 100% 100%; }
+  100% { background-position: 0% 0%; }
+}
+
+.animate-gradientMove {
+  animation: gradientMove 15s ease infinite;
+}
+
+/* Logo subtle movement */
+@keyframes floatCircle {
+  0%, 100% { transform: translateY(0) translateX(0); }
+  25% { transform: translateY(-30px) translateX(20px); }
+  50% { transform: translateY(-15px) translateX(-20px); }
+  75% { transform: translateY(20px) translateX(10px); }
+}
+
+.logo-float {
+  animation: logoFloat 20s ease-in-out infinite;
+  opacity: 0.5; /* subtle visibility */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  pointer-events: none;
+  width: 200px; /* adjust size */
+  height: 200px;
+  background: ('src/pages/logo.png') center/contain no-repeat;
+}

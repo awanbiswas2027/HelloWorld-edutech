@@ -1,0 +1,8 @@
+/* Add these styles to your main CSS file */
+.recommended-card {
+  width: 300px;
+  min-height: 200px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
